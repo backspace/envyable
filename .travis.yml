@@ -1,6 +1,7 @@
 sudo: required
 dist: trusty
-language: ruby
-rvm:
-  - rubinius-3.56
-before_install: gem install bundler
+language: none
+script:
+  - curl -sSL http://rubies.travis-ci.org/rubinius/ubuntu/14.04/x86_64/rbx-3.56.tar.bz2 rubinius-3.56.tar.bz2
+  - rvm install 2.2.0
+  - ruby -v
