@@ -1,32 +1,8 @@
 sudo: required
 dist: trusty
 language: ruby
+before_install:
+  - curl -sSL http://rubies.travis-ci.org/rubinius/ubuntu/14.04/x86_64/rbx-3.56.tar.bz2 rubinius-3.56.tar.bz2
 rvm:
   - rbx-3.56
-  - rbx-3.55
-  - rbx-3.54
-  - rbx-3.53
-  - rbx-3.52
-  - rbx-3.51
-  - rbx-3.50
-  - rbx-3.49
-  - rbx-3.48
-  - rbx-3.47
-  - rbx-3.46
-  - rbx-3.45
-  - rbx-3.44
-  - rbx-3.43
-  - rbx-3.42
-  - rbx-3.41
-  - rbx-3.40
-  - rbx-3.39
-  - rbx-3.38
-  - rbx-3.37
-  - rbx-3.36
-  - rbx-3.35
-  - rbx-3.34
-  - rbx-3.33
-  - rbx-3.32
-  - rbx-3.31
-  - rbx-3.30
 before_install: gem install bundler
