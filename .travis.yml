@@ -2,5 +2,5 @@ sudo: required
 dist: trusty
 language: ruby
 rvm:
-  - rbx-3.56
+  - rbx-3.57
 before_install: gem install bundler
